@@ -1,0 +1,56 @@
+h1. EasyVimeo
+
+EasyVimeo aims to be a very easy and Ruby wrapper around the Vimeo API.
+
+With EasyVimeo, you can upload a video file to the Vimeo website and set its basic properties in a few lines of code.
+
+h1. What's new ?
+
+0.3.0 : updates to new Ruby Vimeo API with some cleanup. We don't need curl anymore because the Ruby Vimeo API now uses HTTPClient to upload.
+
+h1. Example
+
+h2. Send a video in just a few lines of code...
+
+<pre>
+<code>
+  v = Vimeo::Easy.new :api_key => VIMEO_API_KEY, :secret_key => VIMEO_SECRET_KEY, :auth_token => VIMEO_AUTH_TOKEN
+  v.title = "Ma great video"
+  v.description = "Great cool video"
+  v.tags = "youpi, super, cool"
+  v.privacy = :anybody
+  
+  v.file = "/Users/nicolas/test.mov"
+  v.save
+</code>
+</pre>
+
+h2. Or just get the attributes from an existing video...
+
+<pre>
+<code>
+  v = Vimeo::Easy.find 2052244, :api_key => VIMEO_API_KEY, :secret_key => VIMEO_SECRET_KEY
+</code>
+</pre>
+  
+h2. Other interesting methods...
+
+<pre>
+<code>
+  v.available? # => returns true if the video is currenly available on Vimeo (uploaded & transcoded)
+  v.destroy    # => destroy the video
+  v.reload     # => reload the attributes
+</code>
+</pre>
+
+h1. TODO
+
+Add some error management.
+
+And that's all for now ;). Thanks!
+
+h1. Copyright
+
+Copyright (c) 2009 Novelys & Promopixel. See LICENSE for details.
+
+Written by Nicolas Blanco.
