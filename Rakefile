@@ -4,11 +4,11 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "easy-vimeo"
-    gem.summary = "EasyVimeo is an object wrapper around the Ruby Vimeo API to easily upload videos to Vimeo.com"
-    gem.description = "EasyVimeo is an object wrapper around the Ruby Vimeo API to easily upload videos to Vimeo.com"
+    gem.name = "nv-vimeo"
+    gem.summary = "nv-vimeo is an object wrapper around the Ruby Vimeo API to easily upload videos to Vimeo.com"
+    gem.description = "nv-vimeo is an object wrapper around the Ruby Vimeo API to easily upload videos to Vimeo.com"
     gem.email = "slainer68@gmail.com"
-    gem.homepage = "http://github.com/slainer68/easy-vimeo"
+    gem.homepage = "http://github.com/novelys/nv-vimeo"
     gem.authors = ["slainer68"]
     
     if gem.respond_to? :specification_version then
@@ -59,7 +59,7 @@ Rake::RDocTask.new do |rdoc|
   end
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "easy-vimeo #{version}"
+  rdoc.title = "nv-vimeo #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

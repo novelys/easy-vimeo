@@ -1,8 +1,8 @@
-h1. EasyVimeo
+h1. nv-vimeo
 
-EasyVimeo aims to be a very easy and Ruby wrapper around the Vimeo API.
+nv-vimeo aims to be a very easy and Ruby wrapper around the Vimeo API.
 
-With EasyVimeo, you can upload a video file to the Vimeo website and set its basic properties in a few lines of code.
+With nv-vimeo, you can upload a video file to the Vimeo website and set its basic properties in a few lines of code.
 
 h1. What's new ?
 

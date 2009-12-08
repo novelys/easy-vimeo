@@ -4,13 +4,13 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{easy-vimeo}
+  s.name = %q{nv-vimeo}
   s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["slainer68"]
   s.date = %q{2009-12-08}
-  s.description = %q{EasyVimeo is an object wrapper around the Ruby Vimeo API to easily upload videos to Vimeo.com}
+  s.description = %q{nv-vimeo is an object wrapper around the Ruby Vimeo API to easily upload videos to Vimeo.com}
   s.email = %q{slainer68@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -28,11 +28,11 @@ Gem::Specification.new do |s|
      "spec/easy-vimeo_spec.rb",
      "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/slainer68/easy-vimeo}
+  s.homepage = %q{http://github.com/novelys/nv-vimeo}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{EasyVimeo is an object wrapper around the Ruby Vimeo API to easily upload videos to Vimeo.com}
+  s.summary = %q{nv-vimeo is an object wrapper around the Ruby Vimeo API to easily upload videos to Vimeo.com}
   s.test_files = [
     "spec/easy-vimeo_spec.rb",
      "spec/spec_helper.rb"
